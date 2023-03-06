@@ -1,7 +1,12 @@
 import './App.css'
+import Generator from './components/Generator'
 
 function App() {
-  return <div className="App">123</div>
+  return (
+    <div className="App">
+      <Generator />
+    </div>
+  )
 }
 
 export default App
