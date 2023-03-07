@@ -1,3 +1,4 @@
+@import '../../index.scss';
 @import '../../styles/variables.scss';
 
 main {
@@ -12,6 +13,11 @@ main {
     padding-bottom: 72px;
     text-align: center;
     margin: 0 auto;
+    @include mq(500px) {
+      padding-inline: 24px;
+      padding-bottom: 64px;
+      padding-top: 40px;
+    }
     h2 {
       font-weight: 800;
       font-size: 13px;
@@ -20,6 +26,10 @@ main {
       letter-spacing: 4.08571px;
       color: $Neon-Green;
       margin-bottom: 24px;
+      @include mq(500px) {
+        font-size: 11px;
+        line-height: 15px;
+      }
     }
     h1 {
       font-weight: 800;
@@ -29,6 +39,12 @@ main {
       letter-spacing: -0.3px;
       color: $Light-Cyan;
       margin-bottom: 40px;
+      @include mq(500px) {
+        font-size: 24px;
+        margin-bottom: 24px;
+        line-height: 33px;
+        letter-spacing: -0.257143px;
+      }
     }
   }
   img {
