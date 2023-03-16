@@ -47,7 +47,7 @@ export default function Generator() {
           <img src={divider_m} alt="bar" />
         </picture>
       </section>
-      <button onClick={loadAdvices}>
+      <button onClick={loadAdvices} id="al" aria-label="Dice" title="Dice">
         <Dice />
       </button>
     </main>
